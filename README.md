@@ -1,20 +1,29 @@
-# Panda Restaurant — Digital Menu Demo
+# Panda Restaurant — Interactive Digital Menu
 
-A static, mobile-first interactive menu for a Chinese restaurant in Romania, adapted from its 22-page PDF menu.
+Mobile-first static menu demo for Panda Restaurant in Romania, adapted from the original 22-page PDF menu.
 
-## Demo
+## What's in the demo
 
-Open `index.html` or publish the repository with GitHub Pages.
+- 19 dishes with real food photos cropped from the PDF and the original panda logo
+- Romanian, English and Chinese language switching
+- Categories, dish-name / ingredient / code search and spicy filter
+- Dish detail view, favorites tray and indicative saved-item total
+- No ordering, checkout, payments or server dependencies
 
-Included: 19 photographed dishes from the original PDF, RO/EN/ZH language switcher, category navigation, instant search, chili filter, dish details, and a local favorites tray (not an ordering or payment system).
+**Preview only.** The PDF is image-based and text was manually transcribed or simplified. The restaurant must verify each dish's names, weights, prices, ingredient descriptions, allergens and translations before production. This is a 19-dish sample, not a full transcription of all 22 pages.
 
-**Preview only:** The PDF is image-based and the data was manually transcribed or simplified; the restaurant must verify prices, weights, ingredients, translations and allergens before launch. The original full menu contains more dishes than this 19-item sample.
+## Publish with GitHub Pages
 
-## GitHub Pages
+A Pages deployment workflow is included at `.github/workflows/pages.yml`. GitHub requires a one-time setting in the repository:
 
-1. Go to Settings → Pages.
-2. Under Build and deployment, choose Deploy from a branch.
-3. Select `main` and `/(root)`; Save.
-4. Visit `https://enhaosun.github.io/studioseh/` after publication.
+1. Open [Settings → Pages](https://github.com/EnhaoSun/studioseh/settings/pages).
+2. Under **Build and deployment → Source**, select **GitHub Actions**.
+3. Open [Actions](https://github.com/EnhaoSun/studioseh/actions) and re-run the latest Pages workflow if the initial attempt failed before the Pages source was enabled.
 
-All menu images are cropped from the provided PDF, not stock photography. No tracking scripts, backend, payment, or ordering service.
+The published URL will be **https://enhaosun.github.io/studioseh/** after a successful deployment. Subsequent pushes to `main` automatically redeploy the site.
+
+If you prefer no GitHub Actions, you can instead choose **Deploy from a branch → main / (root)**; the site also supports branch-based publishing.
+
+## Tech
+
+Pure HTML/CSS/JavaScript, local WebP and PNG assets extracted from the original PDF, localStorage favorites. The whole site is static and works without a database.
